@@ -5,6 +5,7 @@ import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
 import { DefaultLayout } from "./components/templates/DefaultLayout";
 import { HeaderOnly } from "./components/templates/HeaderOnly";
+import { Router } from "./router/Router";
 import "./styles.css";
 
 const user = {
@@ -19,15 +20,5 @@ const user = {
 };
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <br />
-        <SearchInput />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
