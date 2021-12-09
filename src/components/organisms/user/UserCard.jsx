@@ -22,7 +22,7 @@ export const UserCard = (props) => {
 };
 
 const SDL = styled.dl`
-  text-alingn: left;
+  text-align: left;
   margin-bottom: 0px;
   dt {
     float: left;
